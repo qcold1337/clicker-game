@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Кликер</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Очки</span>
+                    <span id="points" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">В сек.</span>
+                    <span id="cps" class="stat-value">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="click-area" id="clickArea">
+                <button class="click-btn" id="clickBtn">
+                    <span class="btn-text">Кликай!</span>
+                    <span class="btn-bonus" id="clickBonus">+1</span>
+                </button>
+                <div class="floating-numbers" id="floatingNumbers"></div>
+            </div>
+
+            <section class="upgrades">
+                <h2>Улучшения</h2>
+                <div class="upgrade-list" id="upgradeList"></div>
+            </section>
+        </main>
+
+        <footer>
+            <button id="resetBtn" class="reset-btn">Сбросить прогресс</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
