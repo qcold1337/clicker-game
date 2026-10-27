@@ -236,6 +236,7 @@ function handleClick(e) {
     state.points += gain;
     saveGame();
     updateDisplay();
+    renderUpgrades();
     
     // Create floating number at click position
     createFloatingNumber(e.clientX, e.clientY, gain);
@@ -255,6 +256,7 @@ function gameLoop(timestamp) {
         state.points += gain;
         saveGame();
         updateDisplay();
+        renderUpgrades();
         lastAutoClick = timestamp;
     }
     requestAnimationFrame(gameLoop);
